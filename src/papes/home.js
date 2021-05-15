@@ -1,10 +1,7 @@
 const Home = {
-  reder() {
-    return `this a home page`;
-  },
+  render() {
+    return `123`;
+  }
 };
 
 export default Home;
-
-var a = "chao cacs banj";
-console.log(a);
