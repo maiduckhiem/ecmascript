@@ -1,0 +1,290 @@
+{
+  "products": [
+    {
+      "id": "063c1591-6590-4bb9-a0ab-f899b6795cba",
+      "name": "PIZZA RAU CỦ",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg?alt=media&token=dcc401c2-1562-4f75-a5be-147cfee8afb7",
+      "content": "Hành, ớt chuông, nấm, dứa, cà chua",
+      "price": "169.000₫",
+      "priceoff": "200.000₫"
+    },
+    {
+      "id": "1843d1dc-c20b-4783-97f3-177529d79ccb",
+      "name": "Pizza Hawaiian",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-hawaiian-bffb9f95-8d90-4406-aa8a-327bb34aa297.jpg?alt=media&token=4997fea9-3414-4015-810e-793d8a2e6d41",
+      "content": "Giăm bông, thịt muối và dứa",
+      "price": "169.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "e633c243-1c38-4503-ab11-b8aa874545da",
+      "name": "  Pizza Thịt Nguội & Nấm",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-xuc-xich-nuong-88a62e5b-7806-4933-8d2f-72b5ff8aedb2.jpg?alt=media&token=ae63c5c2-d5a2-4842-8f4a-a10446d0147f",
+      "content": "  Pizza giăm bông và nấm đem ",
+      "price": "  169.000₫",
+      "priceoff": "  "
+    },
+    {
+      "id": "2eeebf26-b44f-4091-898e-5d4a7fb0adaf",
+      "name": "Pizza Xúc Xích Ý",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-thit-va-xuc-xich-dd44172f-9b51-4bda-bfcb-76dc9f64ffa4.jpg?alt=media&token=ff6892ae-7f42-44f2-be91-65d6ed7ce122",
+      "content": "Xúc xích cay kiểu Ý trên nền sốt cà chua",
+      "price": "169.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "b3571a1c-6245-4c57-b256-bc883d17f7b4",
+      "name": "Pizza Phô Mai",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-pho-mai-thit-xong-khoi-d602c0c6-7a18-4107-a41c-499e0ad8c17a.jpg?alt=media&token=ee1a6680-6a58-451a-80f4-daf0bbc355f6",
+      "content": "Bánh Pizza với vô vàn phô mai để bạn tha hồ tận hưởng.",
+      "price": "169.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "c2269546-2f03-448f-bbd2-d93c91385716",
+      "name": "Pizza Gà Nướng Dứa",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-ga-nuong-nam-96a7385a-40ed-44ab-84f7-c31c566c6a19.jpg?alt=media&token=fe35a176-7c66-46bc-955a-ee006d494604",
+      "content": "Thịt gà mang vị ngọt của dứa kết hợp với vị cay nóng của ớt",
+      "price": "169.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "c5ef3171-ba01-493f-88f2-25b9186d7b0b",
+      "name": "Pizza 5 Loại Thịt Đặc Biệt Và Rau Củ",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-tom-xot-bo-toi-4ce5c094-035a-4e08-9da3-cff953a9bc09.jpg?alt=media&token=80078bb8-944f-4a28-a762-b42f640d3767",
+      "content": "Xúc xích bò, giăm bông, thịt xông khói,...và cả thế giới rau phong phú.",
+      "price": "169.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "968748c4-580c-4149-851c-785f33bfae47",
+      "name": "Pizza 5 Loại Thịt Đặc Biệt",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-hawaiian-f83b010a-8e3f-43da-bbad-da7d6fe5b96e.jpg?alt=media&token=60b395a2-7033-40b2-ac99-4ce420fb980f",
+      "content": "Xúc xích lợn và bò đặc trưng của Ý, giăm bông, thịt xông khói",
+      "price": "169.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "0ca8a40d-68be-4e61-a9a3-67cb4d7b7a9a",
+      "name": "Pizza 3 Loại Thịt Thập Cẩm Và Rau Củ",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-ca-ngu-f0ca34bc-c055-4507-963c-26ff87c51098.jpg?alt=media&token=099337c3-f7e2-44a8-9ee8-6966cf386758",
+      "content": "Sự kết hợp hài hòa của ba loại thịt và rau củ.",
+      "price": "169.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "a33c7406-88c3-4ca4-a7bc-d6895a1cc4fe",
+      "name": "  Pizza Gà Nướng 3 Vị",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-ga-nuong-nam-a3d22bb5-749e-49e4-9520-3585335c4c94.jpg?alt=media&token=e5e266ed-7ccf-4169-9f4e-ad0a2f7f1997",
+      "content": "  Pizza Gà Nướng 3 Vị trong cuộc phiêu lưu ...",
+      "price": "  169.000₫",
+      "priceoff": "  "
+    },
+    {
+      "id": "b423021b-a40a-45e8-b7c4-02ce5c7a77d4",
+      "name": "Pizza Thịt Nguội Kiểu Canada",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-hai-san-xot-tieu-den-518640a0-f612-4ed2-8d76-ae3672110ee1.jpg?alt=media&token=4582f1fa-d410-43e3-816b-654c39ddbd50",
+      "content": "Thơm ngon và giàu protein với thịt ...",
+      "price": "169.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "80ff5e12-4f2f-4487-b617-78ff7f3c7e87",
+      "name": "Pizza Thịt Xông Khói",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-thit-va-xuc-xich-9aab3f77-d99a-4ded-b3eb-28e1bab11d0e.jpg?alt=media&token=06b1c8a0-ed2a-410d-b098-dfa9828f54ac",
+      "content": "Thịt giăm bông, thịt xông khó...",
+      "price": "169.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "7507cc6f-4d42-478c-a223-d0c91aef7e76",
+      "name": "Mì Ý Cay Xúc Xích",
+      "categoryId": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fmi-y-thit-bam-xot-ca-chua-44a87100-266e-4346-ac08-5bb293cfffcf.jpg?alt=media&token=ac0ca402-bc64-4c12-85de-05891f3992f9",
+      "content": "Mỳ Ý rán với xúc xích cay, thảo mộc, ngò gai và húng quế Ý",
+      "price": "129.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "3a67d3bc-c25b-4ab6-bf83-6cbd69bb70e0",
+      "name": "  Mì Ý Chay Sốt Kem Tươi",
+      "categoryId": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fmi-y-hai-san-xot-tieu-den-ca1dccff-ee40-47ed-bc91-88ac034fe46a.jpg?alt=media&token=dfc48c7f-5852-4d47-b04b-09728aa3fa31",
+      "content": "  Mỳ Ý chay thơm ngon với sốt kem và nấm hấp dẫn",
+      "price": "    129.000₫",
+      "priceoff": "    "
+    },
+    {
+      "id": "34563337-d9e7-40aa-836f-888d32891d0e",
+      "name": "  Mì Ý Chay Sốt Marinara",
+      "categoryId": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fmi-y-thit-bam-xot-ca-chua-66aa8d06-b4bf-439a-a488-1a42e090d1d3.jpg?alt=media&token=5d12a45b-d08c-49b4-8a45-9e6ec76b6594",
+      "content": "  Sốt Marinara, nấm, ớt chuông và cà chua đỏ ngon lành",
+      "price": "  129.000₫",
+      "priceoff": "  "
+    },
+    {
+      "id": "c293fb55-af69-4f91-a9be-d8063f7e8868",
+      "name": "Mì Ý Cay Hải Sản",
+      "categoryId": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fmi-y-hai-san-xot-ca-chua-c3f62058-5c29-4ce4-bb99-300e1e6f1c6a.jpg?alt=media&token=11ebebb1-9bad-40d8-a8d8-aeae46c8f82d",
+      "content": "Mỳ Ý rán với các loại hải sản tươi ngon cùng ớt và tỏi",
+      "price": "129.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "888f5d77-650c-4f9c-85a5-4615545ba0c2",
+      "name": "Mì Ý cay với thịt xông khói",
+      "categoryId": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fmi-y-thit-nguoi-xot-kem-71e1bde5-21f0-403d-b75f-d5c05ebc6cbd.jpg?alt=media&token=10c829cd-25c3-49fd-8fe0-26a2ce188f73",
+      "content": "Mỳ Ý cay nồng và ngậy hương thơm của thịt xông khói",
+      "price": "129.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "820bad2a-e52e-4520-8677-78c3c0bb899d",
+      "name": "Mì Ý Tôm Sốt Kem Cà Chua",
+      "categoryId": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fmi-y-hai-san-xot-ca-chua-eeadc11c-8d8f-4c67-9759-274bafcf5b96.jpg?alt=media&token=625301cb-9885-48ea-b93d-cae3dd7aa449",
+      "content": "Sự tươi ngon của tôm kết hợp với sốt kem cà chua",
+      "price": "129.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "a2f38b29-da33-4214-a3b5-1cf7b1ba96b9",
+      "name": "Mì Ý Giăm Bông Và Nấm Sốt Kem",
+      "categoryId": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fmi-y-thanh-cua-d4ed235d-44c8-40be-89b9-02cc6119a3d3.jpg?alt=media&token=68096b70-d956-460b-b4ad-b36fa6459e5f",
+      "content": "Mỳ Ý, nấm và giăm bông được nấu cùng với sốt kem trắng",
+      "price": "99.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "b33b1e3c-088c-4d1a-9521-300cf826342e",
+      "name": "  Mì Ý thịt bò bằm",
+      "categoryId": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fmi-y-thit-xong-khoi.jpg?alt=media&token=9b2a53a4-eb2c-40c0-a480-e7ea9141382c",
+      "content": "  Sốt thịt bò bằm đặc trưng kết hợp cùng mỳ Ý đầy hấp dẫn",
+      "price": "  99.000₫",
+      "priceoff": "  "
+    },
+    {
+      "id": "ea0f0ece-76db-4454-afad-61b70faa8a15",
+      "name": "Demo",
+      "categoryId": "7",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Ftra-sua-tra-den-41bc24b8-8c96-481e-bf8c-f48ca17872fb.jpg?alt=media&token=01c29ba3-dadd-4a37-8e42-e206efde746f",
+      "content": "Trà Oolong, hạt Chia và kem sữa",
+      "price": "350.007₫",
+      "priceoff": ""
+    },
+    {
+      "id": "88838b79-aa52-422d-8be4-a396cfe956ac",
+      "name": "Lon Fanta 330ml",
+      "categoryId": "7",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Ffanta-lon.jpg?alt=media&token=28ad306f-047a-4c56-940f-2250554a4234",
+      "content": "Hương soda kem trái cây",
+      "price": "30.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "b8a383db-4fab-4fbc-a83e-44878670f2fc",
+      "name": "Lon Sprite 330ml",
+      "categoryId": "7",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fsprite-lon.jpg?alt=media&token=ae64346f-f74b-4728-b0ac-db7f40b671aa",
+      "content": "Sprite là thức uống có ga hương chanh",
+      "price": "30.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "29274260-e6f9-49cf-95dc-f0937108d18f",
+      "name": "  Fanta 1.5L",
+      "categoryId": "7",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Ffanta-1-5l-22e5d2df-ca73-4fca-9da9-e2333e71b5a7-c38dba9a-b872-46a5-af26-0184502a4600.jpg?alt=media&token=e9556987-fdd1-44f3-89b9-e560ea3aff53",
+      "content": "  Nước bão hòa CO2, đường HFCS, đường mía",
+      "price": "  30.000₫",
+      "priceoff": "  "
+    },
+    {
+      "id": "e26091b4-f9ad-4ee4-8f6f-9c0c5cfb3ccb",
+      "name": "  Lon Coca-Cola 330ml",
+      "categoryId": "7",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fcoke-lon-9014ac92-e544-42f5-8c69-34445c3c069d.jpg?alt=media&token=d7919228-a8dc-4397-be85-524246b24c7a",
+      "content": "  Nước bão hoà CO2, đường HFCS, đường mía, màu tự nhiên, chất điều chỉnh độ acid, hương cola tự nhiên và caffein",
+      "price": "  30.000₫",
+      "priceoff": "  "
+    },
+    {
+      "id": "f29ecd46-8389-4bf1-b85b-1971c19eae01",
+      "name": "Coca-Cola 1.5L",
+      "categoryId": "7",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fcoke-1-5l-778e1758-0549-426b-a2cc-e7b8c129c9bd.jpg?alt=media&token=18db04ec-1fe8-475f-baf4-23a5e1369986",
+      "content": "Nước bão hoà CO2, đường HFCS, đường mía, màu tự nhiên, chất điều chỉnh độ acid, hương cola tự nhiên và caffein",
+      "price": "42.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "76b6c378-6b80-4096-9b43-120845de0afe",
+      "name": "7Up 1,5l Chai",
+      "categoryId": "7",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fsprite-1-5l.jpg?alt=media&token=f85d33d2-6326-44e7-9ab1-c3ec9865471c",
+      "content": "Nước bão hòa CO2, đường mía, chất điều chỉnh độ axit (330, 331iii, 296) hương chanh tự nhiên.",
+      "price": "49.000₫",
+      "priceoff": ""
+    },
+    {
+      "id": "8ccf294d-c533-4f5a-8bda-b1e8b1b91260",
+      "name": "  Bia Heineken",
+      "categoryId": "7",
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fheineken.jpg?alt=media&token=8dd47647-1d1c-46da-bfb0-820ff20353d3",
+      "content": "  Sản phẩm dành cho người trên 18 tuổi và không dành cho phụ nữ mang thai. và người đang cho con bú",
+      "price": "  49.000₫",
+      "priceoff": "  "
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Khuyến mãi"
+    },
+    {
+      "id": "2",
+      "name": "Pizza"
+    },
+    {
+      "id": "3",
+      "name": "Khai vị"
+    },
+    {
+      "id": "4",
+      "name": "Mỳ ý"
+    },
+    {
+      "id": "5",
+      "name": "Cơm"
+    },
+    {
+      "id": "6",
+      "name": "Salad"
+    },
+    {
+      "id": "7",
+      "name": "Giai khát"
+    },
+    {
+      "id": "8",
+      "name": "Tráng miệng"
+    }
+  ]
+}
