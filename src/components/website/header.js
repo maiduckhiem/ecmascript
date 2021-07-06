@@ -26,8 +26,7 @@ const Header = {
         </div>
         <div class="mt-3 bg-green-600 rounded-md flex">
             <ul class=" p-4 font-bold  text-white">
-                ${categories
-                  .map((categories) => {
+                ${categories.map((categories) => {
                     return `<li class="inline-block px-2">
                     <a class="hover:text-red-600 " href="/#/category/${categories.id}">${categories.name}</a>
                 </li>`;

@@ -1,3 +1,5 @@
+import Productlist from "../../components/website/productlist";
+
 const Admin = {
   async render() {
     return /*html*/ `
@@ -16,11 +18,11 @@ const Admin = {
                     <ul>
                         <li class="px-5 mx-2 py-2 hover:bg-gray-500 rounded-md text-white ">
                             <i class="fas fa-bacteria mr-2"></i>
-                            <a href="/#/adminproduct">List sản phẩm</a>
+                            <a href="/#/admin">Quản lý danh mục</a>
                         </li>
                         <li class="px-5 mx-2 py-2 hover:bg-gray-500 rounded-md text-white ">
                             <i class="fas fa-bacteria mr-2"></i>
-                            <a href="">Sản phẩm </a>
+                            <a href="/#/adminproduct">Sản phẩm </a>
                         </li>
                         <li class="px-5 mx-2 py-2 hover:bg-gray-500 rounded-md text-white ">
                             <i class="fas fa-bacteria mr-2"></i>
@@ -43,16 +45,15 @@ const Admin = {
                 <h5 class="mx-2 hover:text-green-500"><a href="/#/">Home</a></h5>
                 <h5 class="mx-2 hover:text-green-500"><a href="">Contact</a></h5>
             </div>
-            <div class="py-96">
-                 <select name="" id="">
-                   <option value="">Pizza</option>
-                   <option value="">Nước giải khát</option>
-                   <option value="">mỳ ý</option>
-                </select>
+            <div class="pb-96">
+                <div>${await Productlist.render()}</div>
             </div>
         </div>
     </div>
      `;
   },
+    async afterRender(){
+        return`${await Productlist.afterRender()}`
+    }
 };
 export default Admin;

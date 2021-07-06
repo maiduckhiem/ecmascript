@@ -1,12 +1,14 @@
-import productAPI from "../api/productAPI";
-import { $ } from "../utlis";
-import { v4 as uuidv4 } from "uuid";
-import firebase from "../firebase/index";
+import productAPI from "../../api/productAPI";
+import { parseRequestUrl, $ } from "../../utlis";
+import firebase from "../../firebase/index";
 
-const ProductAddPage = {
+const EditProductPage = {
   async render() {
+    const { id } = parseRequestUrl();
+    const { data: product } = await productAPI.read(id);
+    console.log(product);
     return /*html*/ `
-     <div class="grid grid-cols-12 h-5/6">
+    <div class="grid grid-cols-12 h-5/6">
         <div class="col-span-2 bg-gray-700 border-r border-gray-500">
             <div class="">
                 <div class="border-b flex py-3 px-5">
@@ -49,93 +51,73 @@ const ProductAddPage = {
                 <h5 class="mx-2 hover:text-green-500"><a href="">Contact</a></h5>
             </div>
             <div class="pb-20">
-                  <form class="mb-64" id="form-add">
+                  <form class="mb-64" id="form-update">
                    <div>
-                        <h4 class="mt-5 text-center uppercase font-bold text-white">thêm sản phẩm mới</h4>
+                        <h4 class="mt-5 text-center uppercase font-bold text-white">sửa sản phẩm</h4>
                         <p class="border-b w-64 mx-auto mt-2"></p>
                     </div>
                     <div class="grid grid-cols-12 gap-10 mx-10">
                         <div class="col-span-6">
                             <div class="mt-10 ">
                                 <p class="text-white">Mời bạn nhập tên:</p>
-                                <input class="w-full bg-gray-600 text-green-300 border" type="text" name="" id="product-name">
+                                <input value="  ${product.name}" class="w-full bg-gray-600 text-green-300 border" type="text" name="" id="product-name">
                             </div>
                             <div class="mt-10 border">
-                                <input class="w-full bg-gray-600 text-green-300" type="number" name="" id="product-categoryId">
+                                <input value="${product.categoryId}" class="w-full bg-gray-600 text-green-300" type="number" name="" id="product-categoryId">
                             </div>
                             <div class="mt-10 border bg-gray-600 text-green-300">
-                                <input class="w-full " type="file" name="" id="product-image">
+                                <input value="" class="w-full " type="file" name="" id="product-image">
                             </div>
                         </div>
                         <div class="col-span-6 ">
                             <div class="mt-10">
                                 <p class="text-white">Nhập nội dung :</p>
-                                <input class="w-full border bg-gray-600 text-green-300 " type="text" name="" id="product-content">
+                                <input value="  ${product.content}" class="w-full border bg-gray-600 text-green-300 " type="text" name="" id="product-content">
                             </div>
                             <div class="mt-10 ">
-                                <input class="w-full bg-gray-600 text-green-300  border" type="text" name="" id="product-price">
+                                <input value="  ${product.price}" class="w-full bg-gray-600 text-green-300  border" type="text" name="" id="product-price">
                             </div>
                             <div class="mt-10">
-                                <input class="w-full bg-gray-600 text-green-300  border" type="text" name="" id="product-priceoff">
+                                <input value="  ${product.priceoff}" class="w-full bg-gray-600 text-green-300  border" type="text" name="" id="product-priceoff">
                             </div>
                         </div>
-                        <div class="mb-20">
-                            <select name="" id="product-list">
-                                <option value="">Pizza</option>
-                                <option value="">Nước giải khát</option>
-                                <option value="">mỳ ý</option>
-                            </select>
-                        </div>
-                        <div class="mt-10 mx-auto">
-                            <input type="submit" class="p-1 ml-120 bg-green-300 font-bold uppercase text-red-500 rounded-lg hover:bg-green-600 " value='add product'>
+                        <div class=" mx-auto">
+                            <input type="submit" class="p-1 bg-green-300 font-bold uppercase text-red-500 rounded-lg hover:bg-green-600 " value='add product'>
                         </div>
                   </form>
             </div>
         </div>
     </div>
-     `;
+      `;
   },
-  afterRender() {
-    $("#form-add").addEventListener("submit", (e) => {
+
+  async afterRender() {
+    const { id } = parseRequestUrl();
+    const { data: product } = await productAPI.read(id);
+
+    $("#form-update").addEventListener("submit", (e) => {
       e.preventDefault();
+
       const productImage = $("#product-image").files[0];
       console.log(productImage);
-      const name = document.querySelector("#product-name").value;
-      const categoryId = document.querySelector("#product-categoryId").value;
-      const image = document.querySelector("#product-image").value;
-      const content = document.querySelector("#product-content").value;
-      const price = document.querySelector("#product-price").value;
-      if (name == "") {
-        alert("mời bạn nhập name");
-      } else if (categoryId == "") {
-        alert("bạn chưa nhập categoryId");
-      } else if (image == "") {
-        alert("bạn chưa nhập image");
-      } else if (content == "") {
-        alert("bạn chưa nhập content");
-      } else if (price == "") {
-        alert("bạn chưa nhập content");
-      } else {
         let storageRef = firebase.storage().ref(`image/${productImage.name}`);
         storageRef.put(productImage).then(function () {
           storageRef.getDownloadURL().then((url) => {
-            const product = {
-              id: uuidv4(),
+            const newProduct = {
+              ...product,
               name: $("#product-name").value,
               categoryId: $("#product-categoryId").value,
               image: url,
               content: $("#product-content").value,
               price: $("#product-price").value,
               priceoff: $("#product-priceoff").value,
-              list: $("#product-list").value
             };
-            alert("thêm thành công");
-            productAPI.add(product);
+            productAPI.update(id, newProduct);
+            confirm("update thành công")
+            window.location.hash = "/adminproduct";
           });
         });
-      }
     });
   },
 };
-
-export default ProductAddPage;
+export default EditProductPage;

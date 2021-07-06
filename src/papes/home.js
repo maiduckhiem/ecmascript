@@ -4,6 +4,13 @@ import Header from "../components/website/header";
 const Home = {
   async render() {
     const { data: products } = await productAPI.list();
+    const perpage = 12;
+    const perpage1 = 6;
+    const currentpage = 1;
+    const start = 0;
+    const end = perpage;
+    const end1 = perpage1;
+
     return /*html*/ `
     ${await Header.render()}
     <div class="lg:container mx-auto">
@@ -63,18 +70,20 @@ const Home = {
         </div>
         <div class="grid grid-cols-12 mt-5 gap-5">
             <div class="grid grid-cols-12 col-span-8 gap-5">
-                <div class="col-span-4">
+            ${products.map((product,index)=>{
+                if(index >= start && index < end){
+                    return /*html*/`<div class="col-span-4">
                     <div class="border-2 rounded-md pb-2">
                         <div class="overflow-hidden">
                             <img class="rounded-md hover:scale-110 duration-1000 transform "
-                                src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg" alt=" ">
+                                src="${product.image}" alt=" ">
                         </div>
                         <div class="mx-2">
-                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">PIZZA RAU CỦ</a></h3>
-                            <P class="mt-3 text-sm">Hành, ớt chuông, nấm, dứa, cà chua</P>
+                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="/#/productdetail/${product.id}">${product.name}</a></h3>
+                            <P class="mt-3 text-sm">${product.content}</P>
                             <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
+                                <span class="text-red-500 font-bold ">${product.price}</span>
+                                <span class="font-bold ml-2"><del>${product.priceoff}</del></span>
                             </div>
                             <h4
                                 class="font-bold uppercase mt-2 text-white bg-green-500 text-sm text-center py-2 hover:bg-green-600 duration-200 rounded-md">
@@ -82,167 +91,9 @@ const Home = {
                             </h4>
                         </div>
                     </div>
-                </div>
-                <div class="col-span-4">
-                    <div class="border-2 rounded-md pb-2">
-                        <div class="overflow-hidden">
-                            <img class="rounded-md hover:scale-110 duration-1000 transform "
-                                src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg" alt=" ">
-                        </div>
-                        <div class="mx-2">
-                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">PIZZA RAU CỦ</a></h3>
-                            <P class="mt-3 text-sm">Hành, ớt chuông, nấm, dứa, cà chua</P>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                            <h4
-                                class="font-bold uppercase mt-2 text-white bg-green-500 text-sm text-center py-2 hover:bg-green-600 duration-200 rounded-md">
-                                <a href="#">đặt món</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-4">
-                    <div class="border-2 rounded-md pb-2">
-                        <div class="overflow-hidden">
-                            <img class="rounded-md hover:scale-110 duration-1000 transform "
-                                src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg" alt=" ">
-                        </div>
-                        <div class="mx-2">
-                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">PIZZA RAU CỦ</a></h3>
-                            <P class="mt-3 text-sm">Hành, ớt chuông, nấm, dứa, cà chua</P>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                            <h4
-                                class="font-bold uppercase mt-2 text-white bg-green-500 text-sm text-center py-2 hover:bg-green-600 duration-200 rounded-md">
-                                <a href="#">đặt món</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-4">
-                    <div class="border-2 rounded-md pb-2">
-                        <div class="overflow-hidden">
-                            <img class="rounded-md hover:scale-110 duration-1000 transform "
-                                src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg" alt=" ">
-                        </div>
-                        <div class="mx-2">
-                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">PIZZA RAU CỦ</a></h3>
-                            <P class="mt-3 text-sm">Hành, ớt chuông, nấm, dứa, cà chua</P>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                            <h4
-                                class="font-bold uppercase mt-2 text-white bg-green-500 text-sm text-center py-2 hover:bg-green-600 duration-200 rounded-md">
-                                <a href="#">đặt món</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-4">
-                    <div class="border-2 rounded-md pb-2">
-                        <div class="overflow-hidden">
-                            <img class="rounded-md hover:scale-110 duration-1000 transform "
-                                src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg" alt=" ">
-                        </div>
-                        <div class="mx-2">
-                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">PIZZA RAU CỦ</a></h3>
-                            <P class="mt-3 text-sm">Hành, ớt chuông, nấm, dứa, cà chua</P>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                            <h4
-                                class="font-bold uppercase mt-2 text-white bg-green-500 text-sm text-center py-2 hover:bg-green-600 duration-200 rounded-md">
-                                <a href="#">đặt món</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-4">
-                    <div class="border-2 rounded-md pb-2">
-                        <div class="overflow-hidden">
-                            <img class="rounded-md hover:scale-110 duration-1000 transform "
-                                src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg" alt=" ">
-                        </div>
-                        <div class="mx-2">
-                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">PIZZA RAU CỦ</a></h3>
-                            <P class="mt-3 text-sm">Hành, ớt chuông, nấm, dứa, cà chua</P>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                            <h4
-                                class="font-bold uppercase mt-2 text-white bg-green-500 text-sm text-center py-2 hover:bg-green-600 duration-200 rounded-md">
-                                <a href="#">đặt món</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-4">
-                    <div class="border-2 rounded-md pb-2">
-                        <div class="overflow-hidden">
-                            <img class="rounded-md hover:scale-110 duration-1000 transform "
-                                src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg" alt=" ">
-                        </div>
-                        <div class="mx-2">
-                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">PIZZA RAU CỦ</a></h3>
-                            <P class="mt-3 text-sm">Hành, ớt chuông, nấm, dứa, cà chua</P>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                            <h4
-                                class="font-bold uppercase mt-2 text-white bg-green-500 text-sm text-center py-2 hover:bg-green-600 duration-200 rounded-md">
-                                <a href="#">đặt món</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-4">
-                    <div class="border-2 rounded-md pb-2">
-                        <div class="overflow-hidden">
-                            <img class="rounded-md hover:scale-110 duration-1000 transform "
-                                src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg" alt=" ">
-                        </div>
-                        <div class="mx-2">
-                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">PIZZA RAU CỦ</a></h3>
-                            <P class="mt-3 text-sm">Hành, ớt chuông, nấm, dứa, cà chua</P>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                            <h4
-                                class="font-bold uppercase mt-2 text-white bg-green-500 text-sm text-center py-2 hover:bg-green-600 duration-200 rounded-md">
-                                <a href="#">đặt món</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-4">
-                    <div class="border-2 rounded-md pb-2">
-                        <div class="overflow-hidden">
-                            <img class="rounded-md hover:scale-110 duration-1000 transform "
-                                src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg" alt=" ">
-                        </div>
-                        <div class="mx-2">
-                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">PIZZA RAU CỦ</a></h3>
-                            <P class="mt-3 text-sm">Hành, ớt chuông, nấm, dứa, cà chua</P>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                            <h4
-                                class="font-bold uppercase mt-2 text-white bg-green-500 text-sm text-center py-2 hover:bg-green-600 duration-200 rounded-md">
-                                <a href="#">đặt món</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
+                </div>`;
+                }
+            }).join("")} 
                 <div class="col-span-12">
                     <h4
                         class=" bg-gray-300 w-32 py-2 mx-auto text-center rounded-md hover:bg-green-600 hover:text-white">
@@ -284,84 +135,26 @@ const Home = {
                     </div>
                 </div>
                 <div class="grid grid-cols-12 mt-10 gap-5">
-                    <div class="col-span-6 flex border-2 rounded-lg">
+                    ${products.map((product,index)=>{
+                        if (index >= start && index < end1){
+                            return /*html*/`
+                                <div class="col-span-6 flex border-2 rounded-lg">
                         <div class="p-2">
-                            <img class="w-48 h-32 rounded-lg" src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700 (1).jpg" alt="">
+                            <img class="h-32 rounded-lg" src="${product.image}" width="210" alt="">
                         </div>
                         <div class="p-2">
-                            <h4 class="font-bold text-xl">Pizza Rau Củ</h4>
-                            <p class="text-sm">Hành, ớt chuông, nấm, dứa, cà chua</p>
+                            <h4 class="font-bold text-xl">${product.name}</h4>
+                            <p class="text-sm">${product.content}</p>
                             <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
+                                <span class="text-red-500 font-bold ">${product.price}</span>
+                                <span class="font-bold ml-2"><del>${product.priceoff}</del></span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-6 flex border-2 rounded-lg">
-                       <div class="p-2">
-                            <img class="w-48 h-32 rounded-lg" src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700 (1).jpg" alt="">
-                       </div>
-                        <div class="p-2">
-                            <h4 class="font-bold text-xl">Pizza Rau Củ</h4>
-                            <p class="text-sm">Hành, ớt chuông, nấm, dứa, cà chua</p>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-6 flex border-2 rounded-lg">
-                        <div class="p-2">
-                            <img class="w-48 h-32 rounded-lg" src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700 (1).jpg" alt="">
-                        </div>
-                        <div class="p-2">
-                            <h4 class="font-bold text-xl">Pizza Rau Củ</h4>
-                            <p class="text-sm">Hành, ớt chuông, nấm, dứa, cà chua</p>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-6 flex border-2 rounded-lg">
-                        <div class="p-2">
-                            <img class="w-48 h-32 rounded-lg" src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700 (1).jpg" alt="">
-                        </div>
-                        <div class="p-2">
-                            <h4 class="font-bold text-xl">Pizza Rau Củ</h4>
-                            <p class="text-sm">Hành, ớt chuông, nấm, dứa, cà chua</p>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-6 flex border-2 rounded-lg">
-                        <div class="p-2">
-                            <img class="w-48 h-32 rounded-lg" src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700 (1).jpg" alt="">
-                        </div>
-                        <div class="p-2">
-                            <h4 class="font-bold text-xl">Pizza Rau Củ</h4>
-                            <p class="text-sm">Hành, ớt chuông, nấm, dứa, cà chua</p>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-6 flex border-2 rounded-lg">
-                        <div class="p-2">
-                            <img class="w-48 h-32 rounded-lg" src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700 (1).jpg" alt="">
-                        </div>
-                        <div class="p-2">
-                            <h4 class="font-bold text-xl">Pizza Rau Củ</h4>
-                            <p class="text-sm">Hành, ớt chuông, nấm, dứa, cà chua</p>
-                            <div class="mt-3">
-                                <span class="text-red-500 font-bold ">200.000đ</span>
-                                <span class="font-bold ml-2"><del>230.000đ</del></span>
-                            </div>
-                        </div>
-                    </div>
+                            `;
+                        }
+                    }).join("")}
+                    
                 </div>
             </div>
             <div class="col-span-4">

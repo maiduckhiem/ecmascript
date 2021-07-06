@@ -1,4 +1,4 @@
-import ListProduct from "../components/website/listproduct";
+import ListProduct from "../../components/website/listproduct";
 
 const AdminproductPage = {
  async render() {
@@ -18,11 +18,11 @@ const AdminproductPage = {
                     <ul>
                         <li class="px-5 mx-2 py-2 hover:bg-gray-500 rounded-md text-white ">
                             <i class="fas fa-bacteria mr-2"></i>
-                            <a href="/#/adminproduct">List sản phẩm</a>
+                            <a href="/#/admin">Quản lý danh mục</a>
                         </li>
                         <li class="px-5 mx-2 py-2 hover:bg-gray-500 rounded-md text-white ">
                             <i class="fas fa-bacteria mr-2"></i>
-                            <a href="">Sản phẩm </a>
+                            <a href="/#/adminproduct">Sản phẩm </a>
                         </li>
                         <li class="px-5 mx-2 py-2 hover:bg-gray-500 rounded-md text-white ">
                             <i class="fas fa-bacteria mr-2"></i>

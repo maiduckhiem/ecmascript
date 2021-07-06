@@ -20,7 +20,7 @@ const categoryPage = {
                                 src="${item.image}" alt=" ">
                         </div>
                         <div class="mx-2">
-                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">${item.name}</a></h3>
+                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="/#/productdetail/${item.id}">${item.name}</a></h3>
                             <P class="mt-3 text-sm ">${item.content}</P>
                             <div class="mt-3">
                                 <span class="text-red-500 font-bold ">${item.price}</span>

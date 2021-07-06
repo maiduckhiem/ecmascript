@@ -9,14 +9,13 @@ const ListProduct = {
                <table>
                 <thead>
                     <tr class="rounded-lg pb-5 text-green-500">
-                        <th class="font-bold  uppercase ">id</th>
-                        <th class="font-bold uppercase  ">categoryId</th>
-                        <th class="font-bold uppercase  ">name</th>
-                        <th class="font-bold uppercase  ">image</th>
-                        <th class="font-bold uppercase  ">content</th>
-                        <th class="font-bold uppercase  ">price</th>
-                        <th class="font-bold uppercase pr-5 ">priceoff</th>
-                        <th class="border-l"><a class="px-4 py-1 rounded-lg text-white uppercase bg-green-500" href="/#/productadd">thêm sản phẩm</th>
+                        <th class="font-bold  uppercase pb-10 ">id</th>
+                        <th class="font-bold uppercase  pb-10 ">name</th>
+                        <th class="font-bold uppercase  pb-10 ">image</th>
+                        <th class="font-bold uppercase  pb-10 ">content</th>
+                        <th class="font-bold uppercase  pb-10 ">price</th>
+                        <th class="font-bold uppercase pr-5 pb-10 ">priceoff</th>
+                        <th class="pb-10"><a class="px-4 py-1 rounded-lg text-white uppercase bg-green-500" href="/#/productadd">thêm sản phẩm</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,7 +23,6 @@ const ListProduct = {
                   .map((product, index) => {
                     return `<tr class="border-b">
                         <td class="text-center px-2 w-2">${index}</td>
-                        <td class="text-center px-2 w-2">${product.categoryId}</td>
                         <td class=" px-3">${product.name}</td>
                         <td class=" px-3"><img class="w-20" src="${product.image}" /></td>
                         <td class=" px-3">${product.content}</td>
@@ -47,6 +45,7 @@ const ListProduct = {
       const id = btn.dataset.id;
       console.log(id);
       btn.addEventListener("click", function () {
+
         console.log(btn.dataset.id);
         ProductAPI.remove(id);
         reRender(ListProduct,"#list-product");

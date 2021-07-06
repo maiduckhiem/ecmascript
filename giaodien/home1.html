@@ -1,22 +1,22 @@
-import ProductAPI from "../api/productAPI";
-import Footer from "../components/website/footer";
-import Header from "../components/website/header";
-import { parseRequestUrl, $ } from "../utlis";
+<!DOCTYPE html>
+<html lang="en">
 
-const ProductDetail = {
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
- async render() {
+</head>
 
-  const { id } = parseRequestUrl();
-  const {data: item} = await ProductAPI.read(id);
- 
-    return/*hmtl*/`${await Header.render()}
-    <div class="lg:container mx-auto mt-10 mb-5">
-                 <h5 class="text-sm "><a class="hover:text-green-500" href="/#/">trang chủ</a> / <a class="text-green-500"
-                href="/#/productdetail/${item.id}">${item.name}</a></h5>
-               <div class="grid grid-cols-12 gap-10"></div><div class="grid grid-cols-12 gap-10">
+<body>
+    <div class="lg:container mx-auto">
+        <h5 class="text-sm "><a class="hover:text-green-500" href="/#/">trang chủ</a> / <a class="text-green-500"
+                href="/#/product/2">Đăng nhập tài khoản</a></h5>
+                <div class="grid grid-cols-12 gap-10">
                     <div class="col-span-6 mt-10">
-                        <img class="w-full" src="${item.image}" alt="">
+                        <img class="w-full" src="image/pizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg" alt="">
                         <p class="text-center mt-4 text-sm">click chuột để phóng to</p>
                         <div class="grid grid-cols-3 mx-32 mt-5 gap-5">
                             <div class="col-span-1 hover:border-green-500 border-2 rounded-md">
@@ -31,12 +31,12 @@ const ProductDetail = {
                         </div>
                     </div>
                     <div class="col-span-6 mt-10">
-                        <h3 class="font-bold text-2xl ">${item.name}</h3>
+                        <h3 class="font-bold text-2xl ">Pizza Rau Củ</h3>
                         <p class="mt-3">
-                            ${item.content}
+                            Hành, ớt chuông, nấm, dứa, cà chua
                         </p>
-                        <h5 class="font-bold text-3xl text-red-500 mt-3">${item.price}</h5>
-                        <h5 class="mt-2">Gía thị trường: <del>${item.priceoff}</del></h5>
+                        <h5 class="font-bold text-3xl text-red-500 mt-3">169.000₫</h5>
+                        <h5 class="mt-2">Gía thị trường: <del>200.000đ</del></h5>
                         <div class="flex border-t border-b mt-5 p-2">
                             <h5 class="mr-3">mã giảm giá:</h5>
                             <p class="ml-3 bg-red-100 text-red-400 p-1">Giảm 10%</p>
@@ -102,7 +102,7 @@ const ProductDetail = {
                                     <img class="rounded-md hover:scale-110 duration-1000 transform " src="${item.image}" alt=" ">
                                 </div>
                                 <div class="mx-2">
-                                    <h3 class="hover:text-green-500 font-bold mt-3"><a href="/#/productdetail/${item.id}">${item.name}</a></h3>
+                                    <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">${item.name}</a></h3>
                                     <P class="mt-3 text-sm ">${item.content}</P>
                                     <div class="mt-3">
                                         <span class="text-red-500 font-bold ">${item.price}</span>
@@ -121,7 +121,7 @@ const ProductDetail = {
                                     <img class="rounded-md hover:scale-110 duration-1000 transform " src="${item.image}" alt=" ">
                                 </div>
                                 <div class="mx-2">
-                                    <h3 class="hover:text-green-500 font-bold mt-3"><a href="/#/productdetail/${item.id}">${item.name}</a></h3>
+                                    <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">${item.name}</a></h3>
                                     <P class="mt-3 text-sm ">${item.content}</P>
                                     <div class="mt-3">
                                         <span class="text-red-500 font-bold ">${item.price}</span>
@@ -140,7 +140,7 @@ const ProductDetail = {
                                     <img class="rounded-md hover:scale-110 duration-1000 transform " src="${item.image}" alt=" ">
                                 </div>
                                 <div class="mx-2">
-                                    <h3 class="hover:text-green-500 font-bold mt-3"><a href="/#/productdetail/${item.id}">${item.name}</a></h3>
+                                    <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">${item.name}</a></h3>
                                     <P class="mt-3 text-sm ">${item.content}</P>
                                     <div class="mt-3">
                                         <span class="text-red-500 font-bold ">${item.price}</span>
@@ -159,7 +159,7 @@ const ProductDetail = {
                                     <img class="rounded-md hover:scale-110 duration-1000 transform " src="${item.image}" alt=" ">
                                 </div>
                                 <div class="mx-2">
-                                    <h3 class="hover:text-green-500 font-bold mt-3"><a href="/#/productdetail/${item.id}">${item.name}</a></h3>
+                                    <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">${item.name}</a></h3>
                                     <P class="mt-3 text-sm ">${item.content}</P>
                                     <div class="mt-3">
                                         <span class="text-red-500 font-bold ">${item.price}</span>
@@ -173,10 +173,10 @@ const ProductDetail = {
                             </div>
                         </div>
                     </div>
-                  </div>
-                  </div>
-                    ${await Footer.render()}
-              `
- }
-};
-export default ProductDetail;
+                </div>
+    </div>
+    <script src="https://kit.fontawesome.com/978924ea4f.js
+                                        " crossorigin="anonymous"></script>
+</body>
+
+</html>

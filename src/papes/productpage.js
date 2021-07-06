@@ -3,16 +3,21 @@ import header from "../components/website/header";
 import footer from "../components/website/footer";
 const ProductPage = {
     async render(){
+        const listpage = 12;
+        const start = 0;
+        const nextpage = 1;
+        const end = listpage;
+
         const {data:product} = await ProductAPI.list();
-        const result = product.map(item=>{
-            return ` <div class="col-span-3 mt-10">
+        const result = product.map((item,index)=>{
+                    return /*html*/ ` <div class="col-span-3 mt-10">
                     <div class="border-2 rounded-md pb-2">
                         <div class="overflow-hidden">
                             <img class="rounded-md hover:scale-110 duration-1000 transform "
                                 src="${item.image}" alt=" ">
                         </div>
                         <div class="mx-2">
-                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="#">${item.name}</a></h3>
+                            <h3 class="hover:text-green-500 font-bold mt-3"><a href="/#/productDetail/${item.id}">${item.name}</a></h3>
                             <P class="mt-3 text-sm">${item.content}</P>
                             <div class="mt-3">
                                 <span class="text-red-500 font-bold ">${item.price}</span>

@@ -1,22 +1,22 @@
 {
   "products": [
     {
-      "id": "063c1591-6590-4bb9-a0ab-f899b6795cba",
-      "name": "PIZZA RAU CỦ",
+      "id": "1",
+      "name": "        Pizza rau củ",
       "categoryId": "2",
-      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg?alt=media&token=dcc401c2-1562-4f75-a5be-147cfee8afb7",
-      "content": "Hành, ớt chuông, nấm, dứa, cà chua",
-      "price": "169.000₫",
-      "priceoff": "200.000₫"
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-rau-cu-ae6375ac-4b2a-44e6-b280-0bb4c0fba700.jpg?alt=media&token=5611d8fe-15d4-4361-9cda-4d72bca27cdf",
+      "content": "        hành, ớt chuông , nấm , dứa , cà chua ",
+      "price": "        169.000₫",
+      "priceoff": "       200.000đ "
     },
     {
-      "id": "1843d1dc-c20b-4783-97f3-177529d79ccb",
-      "name": "Pizza Hawaiian",
+      "id": "2",
+      "name": "    Pizza HAWALLAN",
       "categoryId": "2",
-      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-hawaiian-bffb9f95-8d90-4406-aa8a-327bb34aa297.jpg?alt=media&token=4997fea9-3414-4015-810e-793d8a2e6d41",
-      "content": "Giăm bông, thịt muối và dứa",
-      "price": "169.000₫",
-      "priceoff": ""
+      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fpizza-hawaiian-bffb9f95-8d90-4406-aa8a-327bb34aa297.jpg?alt=media&token=2acc5a54-331a-4c73-b672-85611c0e8850",
+      "content": "    Giấm bông,thịt muối va dưa",
+      "price": "    169.000₫",
+      "priceoff": "    "
     },
     {
       "id": "e633c243-1c38-4503-ab11-b8aa874545da",
@@ -242,15 +242,32 @@
       "content": "Nước bão hòa CO2, đường mía, chất điều chỉnh độ axit (330, 331iii, 296) hương chanh tự nhiên.",
       "price": "49.000₫",
       "priceoff": ""
+    }
+  ],
+  "productlists": [
+    {
+      "id": "1",
+      "name": "Pizza"
     },
     {
-      "id": "8ccf294d-c533-4f5a-8bda-b1e8b1b91260",
-      "name": "  Bia Heineken",
-      "categoryId": "7",
-      "image": "https://firebasestorage.googleapis.com/v0/b/image-8a0a8.appspot.com/o/image%2Fheineken.jpg?alt=media&token=8dd47647-1d1c-46da-bfb0-820ff20353d3",
-      "content": "  Sản phẩm dành cho người trên 18 tuổi và không dành cho phụ nữ mang thai. và người đang cho con bú",
-      "price": "  49.000₫",
-      "priceoff": "  "
+      "id": "d5b26b41-dc76-4ee0-bf8a-686a30a6ef27",
+      "name": "nước giải khát"
+    },
+    {
+      "id": "d2435fac-7ed2-42dd-b497-ecf534a5a22f",
+      "name": "mỳ ý"
+    },
+    {
+      "id": "204e4da3-4702-4c7d-b749-7efe9c5f7c25",
+      "name": "Tráng miệng"
+    },
+    {
+      "id": "8c1a533b-5e12-41bc-a21e-64d034c47fee",
+      "name": "Cơm"
+    },
+    {
+      "id": "3a1af17a-5ddf-4762-9ee0-8b671060aff3",
+      "name": "Salar"
     }
   ],
   "categories": [

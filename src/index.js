@@ -4,11 +4,13 @@ import { parseRequestUrl , $ } from "./utlis";
 import Error404Page from "./papes/Error404page";
 import CategoryPage from "./papes/categoryPage";
 import IntroducePage from "./papes/introducePage";
-import Admin from "./papes/admin";
-import ProductAddPage from "./papes/productAddPage";
-import AdminproductPage from "./papes/adminproductPage";
-import EditProductPage from "./papes/editProductPage";
+import Admin from "./papes/admin/admin";
+import ProductAddPage from "../src/papes/admin/productAddPage";
+import AdminproductPage from "./papes/admin/adminproductPage";
+import EditProductPage from "../src/papes/admin/editProductPage";
 import UserPage from "./papes/userPage";
+import ListAddPage from "./papes/admin/listAddPage";
+import Editlist from "./papes/admin/editList";
 import ProductDetail from "./papes/productDetail";
 
 const routes = {
@@ -21,7 +23,9 @@ const routes = {
   "/productadd": ProductAddPage,
   "/editproduct/:id": EditProductPage,
   "/user": UserPage,
-  "productdetail/:id": ProductDetail
+  "/productdetail/:id": ProductDetail,
+  "/addlist":ListAddPage,
+  "/editlist/:id": Editlist
 };
 
 const router = async () => {
