@@ -3,7 +3,7 @@ import Footer from "../components/website/footer";
 import Header from "../components/website/header";
 const Home = {
   async render() {
-    const { data: products } = await productAPI.list();
+    const { data: products} = await productAPI.list();
     const perpage = 12;
     const perpage1 = 6;
     const currentpage = 1;
