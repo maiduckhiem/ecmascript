@@ -4,7 +4,7 @@ import Header from "../components/website/header";
 const Home = {
   async render() {
     const { data: products} = await productAPI.list();
-    const perpage = 12;
+    const perpage = 6;
     const perpage1 = 6;
     const currentpage = 1;
     const start = 0;
@@ -83,7 +83,6 @@ const Home = {
                             <P class="mt-3 text-sm">${product.content}</P>
                             <div class="mt-3">
                                 <span class="text-red-500 font-bold ">${product.price}</span>
-                                <span class="font-bold ml-2"><del>${product.priceoff}</del></span>
                             </div>
                             <h4
                                 class="font-bold uppercase mt-2 text-white bg-green-500 text-sm text-center py-2 hover:bg-green-600 duration-200 rounded-md">

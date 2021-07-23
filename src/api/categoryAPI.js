@@ -1,16 +1,16 @@
-// import { axiosClient } from "./axiosClient";
+import { axiosClient } from "./axiosClient";
 import axios from 'axios';
 export const CategoryAPI = {
   list() {
-    const url = `http://localhost:3001/categories`;
-    return axios.get(url);
+    const url = `/categories`;
+    return axiosClient.get(url);
   },
   read(id) {
-    const url = `http://localhost:3001/categories/${id}`;
+    const url = `/categories/${id}`;
     return axios.get(url);
   },
   remove(id) {
-    const url = `http://localhost:3001/categories/${id}`;
+    const url = `/categories/${id}`;
     return axios.delete(url);
   },
 };
