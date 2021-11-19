@@ -1,10 +1,10 @@
-import categoryAPI from "../../api/categoryAPI";
+import CategoryAPI from "../../api/categoryAPI";
 const Header = {
   async render() {
     try {
-      const { data: categories } = await categoryAPI.list();
+      const { data: categories } = await CategoryAPI.list();
       return /*html*/ `
-      <section class="heade lg:container mx-auto">
+      <section class="header lg:container mx-auto">
         <div class="grid grid-cols-12 mt-2">
             <div class="col-span-4 ">
                 <p class="text-sm mt-4 text-green-500">Giao hàng tiết kiệm cho đơn hàng trên 499.000₫</p>
@@ -26,9 +26,9 @@ const Header = {
         </div>
         <div class="mt-3 bg-green-600 rounded-md flex">
             <ul class=" p-4 font-bold  text-white">
-                ${categories.map((categories) => {
+                ${categories.map((index) => {
                     return `<li class="inline-block px-2">
-                    <a class="hover:text-red-600 " href="/#/category/${categories.id}">${categories.name}</a>
+                    <a class="hover:text-red-600 " href="/#/category/${index.id}">${index.name}</a>
                 </li>`;
                   })
                   .join("")}

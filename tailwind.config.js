@@ -11,6 +11,14 @@ module.exports = {
         144: "36rem",
       },
     },
+    container: {
+      padding: {
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+    },
   },
   variants: {
     extend: {},

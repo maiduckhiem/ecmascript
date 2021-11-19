@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve --open --mode development",
     "build:css": "npx tailwindcss-cli@latest build tailwind.css -o ./assets/css/tailwind.css",
-    "start:server": "json-server --watch ./src/db/data.json --port 3001"
+    "server": "json-server --watch ./src/db/data.json --port 3001"
   },
   "keywords": [],
   "author": "",

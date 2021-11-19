@@ -114,7 +114,7 @@ const Home = {
         </div>
     </section>
     <div class="mt-10">
-        <img src="image/feature_banner_1.jpg" alt="">
+        <img class="mx-auto" src="image/feature_banner_1.jpg" alt="">
     </div>
     <div>
     
